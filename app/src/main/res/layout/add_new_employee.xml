@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dip">
+
+        <EditText
+            android:id="@+id/edt_Name"
+            android:hint="Employee Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textCapSentences"
+            android:padding="5dip"
+            android:textSize="20dip" />
+
+        <EditText
+            android:id="@+id/edt_Age"
+            android:hint="Employee Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_Name"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:padding="5dip"
+            android:textSize="20dip" />
+
+        <EditText
+            android:id="@+id/edt_Address"
+            android:hint="Employee Address"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edt_Age"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textCapWords"
+            android:padding="5dip"
+            android:textSize="20dip" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:text="Save"/>
+</RelativeLayout>
